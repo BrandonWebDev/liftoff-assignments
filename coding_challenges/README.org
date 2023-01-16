@@ -1,6 +1,7 @@
 * Liftoff Coding Challenges :TOC:
   - [[#class-1---area-of-a-triangle][Class 1 - Area of A Triangle]]
   - [[#class-2---find-the-smallest-and-biggest-numbers][Class 2 - Find the Smallest and Biggest Numbers]]
+  - [[#class-3---first-reverse][Class 3 - First Reverse]]
 
 ** Class 1 - Area of A Triangle
 Write a function that takes the base and height of a triangle and return its area.
@@ -25,7 +26,6 @@ function triArea(base: number, height: number): number {
     return (base * height) / 2;
 }
 #+end_src
-
 ** Class 2 - Find the Smallest and Biggest Numbers
 Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
 
@@ -43,4 +43,20 @@ All test arrays will have at least one element and are valid.
 function minMax(nums: number[]): [min: number, max: number] {
     return [Math.min(...nums), Math.max(...nums)];
 }
+#+end_src
+** Class 3 - First Reverse
+Have the function FirstReverse(str) take the str parameter being passed and
+return the string in reversed order. For example: if the input string is "Hello
+World and Coders" then your program should return the string sredoC dna dlroW
+olleH.
+
+*** My Solution
+#+begin_src typescript
+function FirstReverse(str: string): string {
+
+  // code goes here
+  return str.split("").reverse().join("");
+
+}
+
 #+end_src
